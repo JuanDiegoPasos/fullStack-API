@@ -109,6 +109,18 @@ El frontend adopta una arquitectura basada en componentes con React, utilizando 
 - `PATCH /api/users/:id`: Actualizar un usuario por ID.
 - `DELETE /api/users/:id`: Eliminar un usuario por ID.
 
+
+## Capturas
+
+[![LOGIN.png](https://i.postimg.cc/RVNMP4hr/LOGIN.png)](https://postimg.cc/HV1DnGb3)
+
+
+[![Dashboard.png](https://i.postimg.cc/J7Kn6pqC/Dashboard.png)](https://postimg.cc/QV9hVkwf)
+
+
+[![Actualizar.png](https://i.postimg.cc/PrpjWyVY/Actualizar.png)](https://postimg.cc/0bsFxYsy)
+
+
 ## Estructura del Proyecto
 
 ```
