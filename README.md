@@ -35,6 +35,69 @@ El frontend adopta una arquitectura basada en componentes con React, utilizando 
 ### Base de Datos
 - MySQL
 
+## API Endpoints
+
+### Públicas
+- `POST /api/users/register`: Registrar un nuevo usuario.
+- `POST /api/users/login`: Iniciar sesión.
+
+### Privadas (requieren token JWT)
+- `GET /api/users`: Obtener todos los usuarios.
+- `PATCH /api/users/:id`: Actualizar un usuario por ID.
+- `DELETE /api/users/:id`: Eliminar un usuario por ID.
+
+
+## Capturas
+
+[![LOGIN.png](https://i.postimg.cc/RVNMP4hr/LOGIN.png)](https://postimg.cc/HV1DnGb3)
+
+
+[![Dashboard.png](https://i.postimg.cc/J7Kn6pqC/Dashboard.png)](https://postimg.cc/QV9hVkwf)
+
+
+[![Actualizar.png](https://i.postimg.cc/PrpjWyVY/Actualizar.png)](https://postimg.cc/0bsFxYsy)
+
+
+## Estructura del Proyecto
+
+```
+proyecto-full/
+├── backend/
+│   ├── src/
+│   │   ├── app.js
+│   │   ├── config/
+│   │   │   └── db.js
+│   │   ├── controllers/
+│   │   │   └── userController.js
+│   │   ├── middleware/
+│   │   │   └── authMiddleware.js
+│   │   ├── models/
+│   │   │   └── userModel.js
+│   │   └── routes/
+│   │       └── userRoutes.js
+│   ├── package.json
+│   └── ...
+├── frontend/
+│   ├── src/
+│   │   ├── api/
+│   │   │   └── axiosConfig.js
+│   │   ├── components/
+│   │   ├── features/
+│   │   │   ├── auth/
+│   │   │   └── users/
+│   │   ├── pages/
+│   │   │   ├── Dashboard.jsx
+│   │   │   └── LandingPage.jsx
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── package.json
+│   └── ...
+├── database/
+│   └── Database-clients.sql
+└── README.md
+```
+
+
 ## Instalación
 
 ### Prerrequisitos
@@ -97,66 +160,4 @@ El frontend adopta una arquitectura basada en componentes con React, utilizando 
 - El backend corre en `http://localhost:4000`.
 - En la página de inicio, puedes registrarte o iniciar sesión.
 - Después de iniciar sesión, serás redirigido al dashboard donde puedes ver, actualizar y eliminar usuarios.
-
-## API Endpoints
-
-### Públicas
-- `POST /api/users/register`: Registrar un nuevo usuario.
-- `POST /api/users/login`: Iniciar sesión.
-
-### Privadas (requieren token JWT)
-- `GET /api/users`: Obtener todos los usuarios.
-- `PATCH /api/users/:id`: Actualizar un usuario por ID.
-- `DELETE /api/users/:id`: Eliminar un usuario por ID.
-
-
-## Capturas
-
-[![LOGIN.png](https://i.postimg.cc/RVNMP4hr/LOGIN.png)](https://postimg.cc/HV1DnGb3)
-
-
-[![Dashboard.png](https://i.postimg.cc/J7Kn6pqC/Dashboard.png)](https://postimg.cc/QV9hVkwf)
-
-
-[![Actualizar.png](https://i.postimg.cc/PrpjWyVY/Actualizar.png)](https://postimg.cc/0bsFxYsy)
-
-
-## Estructura del Proyecto
-
-```
-proyecto-full/
-├── backend/
-│   ├── src/
-│   │   ├── app.js
-│   │   ├── config/
-│   │   │   └── db.js
-│   │   ├── controllers/
-│   │   │   └── userController.js
-│   │   ├── middleware/
-│   │   │   └── authMiddleware.js
-│   │   ├── models/
-│   │   │   └── userModel.js
-│   │   └── routes/
-│   │       └── userRoutes.js
-│   ├── package.json
-│   └── ...
-├── frontend/
-│   ├── src/
-│   │   ├── api/
-│   │   │   └── axiosConfig.js
-│   │   ├── components/
-│   │   ├── features/
-│   │   │   ├── auth/
-│   │   │   └── users/
-│   │   ├── pages/
-│   │   │   ├── Dashboard.jsx
-│   │   │   └── LandingPage.jsx
-│   │   ├── App.jsx
-│   │   └── main.jsx
-│   ├── package.json
-│   └── ...
-├── database/
-│   └── Database-clients.sql
-└── README.md
-```
 
