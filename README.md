@@ -1,5 +1,7 @@
 # Proyecto Full Stack - Gestión de Usuarios
 
+[![REGISTRARSE.png](https://i.postimg.cc/kXjjfPzP/REGISTRARSE.png)](https://postimg.cc/GHyJmVbX)
+
 ## Descripción
 
 Esta es una aplicación web full stack para la gestión de usuarios. Permite registrar nuevos usuarios, iniciar sesión, y realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre los usuarios existentes. La aplicación incluye autenticación JWT para proteger las rutas privadas y hashing de contraseñas.
