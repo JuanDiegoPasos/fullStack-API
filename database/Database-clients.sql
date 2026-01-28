@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS Db_crud_clients;
+USE Db_crud_clients;
+
+CREATE TABLE IF NOT EXISTS users (
+    id VARCHAR(36) PRIMARY KEY DEFAULT (UUID()),
+    username VARCHAR(255) UNIQUE NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    password_hash VARCHAR(255) NOT NULL
+)
+
+

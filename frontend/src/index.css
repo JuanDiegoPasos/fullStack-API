@@ -1,0 +1,72 @@
+    @import "tailwindcss";
+
+    :root {
+    --color-lilac: #9D7FF7;
+    --color-pink: #FE3F8B;
+    --color-pink-light: #FDA5D1;
+    --font-main: 'Poppins', sans-serif;
+    }
+
+    /* Reseteo básico */
+    h1, h2, h3, h4, h5, h6, p, a {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-main);
+    }
+
+    /* ===========================
+    🟣 Encabezados
+    =========================== */
+    h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+    color: #FDA5D1;
+
+    }
+
+    h2 {
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+    color: var(--color-lilac);
+    }
+
+    h3 {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.3;
+    color: #fff;
+    }
+
+    /* ===========================
+    📝 Párrafos
+    =========================== */
+    p {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #FFFF;
+    margin-bottom: 1rem;
+    }
+
+    /* ===========================
+    🌐 Enlaces
+    =========================== */
+    a {
+    color: var(--color-pink);
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+    border-bottom: 2px solid transparent;
+    }
+
+    a:hover {
+    color: var(--color-pink-light);
+    text-decoration: none;
+    border-bottom-color: var(--color-pink-light);
+    }
